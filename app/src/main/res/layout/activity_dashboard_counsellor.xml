@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    tools:context=".DashboardCounsellor">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="320dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext_background"
+        android:padding="@dimen/pad_10dp"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="112dp"
+        android:onClick="schedule"
+        android:text="schedule"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/logout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <Button
+        android:id="@+id/userlist"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+
+        android:onClick="userlist"
+        android:text="userlist"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <Button
+        android:id="@+id/logout1"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+
+        android:onClick="logout1"
+        android:text="Logout"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.68" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

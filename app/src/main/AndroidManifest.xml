@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.notalone">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NotAlone">
+        <activity android:name=".kidhelp"></activity>
+        <activity android:name=".DashboardCounsellor" />
+        <activity android:name=".calender" />
+        <activity
+            android:name=".PublicActivity"
+            android:label="@string/title_activity_public"
+            android:theme="@style/Theme.NotAlone.NoActionBar" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".SigninCounsellor" />
+        <activity android:name=".Counsellor" />
+        <activity android:name=".SigninUser" />
+        <activity android:name=".User" />
+        <activity android:name=".UserList" />
+        <activity android:name=".UserList1" />
+        <activity android:name=".Chat" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+    </application>
+
+</manifest>
